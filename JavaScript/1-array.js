@@ -29,4 +29,12 @@
 // Array.prototype.sort([compareFunction])
 // QuickSort to TimSort
 {
+  const persons = [
+    { name: 'user1', born: 2000 },
+    { name: 'user2', born: 2001 },
+    { name: 'user3', born: 2001 },
+    { name: 'user4', born: 2001 },
+    { name: 'user5', born: 2002 },
+  ];
+  console.dir(persons.sort((a, b) => a.born - b.born));
 }
