@@ -11,6 +11,6 @@ const g = e => {
 new Promise(r => r(5))
   .then(f)
   .catch(g)
-  .finally(e => {
+  .finally(() => {
     console.log('finally');
   });

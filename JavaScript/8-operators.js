@@ -12,9 +12,13 @@ console.dir({ a, b, c, d, e });
 
 // Optional chaining
 
+/*
+
 const spqr = {
   emperor: { name: 'Marcus' }
 };
 
 console.log(spqr.emperor?.name);
 console.log(spqr.president?.name);
+
+*/
