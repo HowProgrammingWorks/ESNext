@@ -2,7 +2,7 @@
 
 const fn = async (a, b, c) => {
   // do something
-  const aValue = await { then: r => r([a, b, c]) };
+  const aValue = await { then: (r) => r([a, b, c]) };
   // do something
   return aValue;
 };

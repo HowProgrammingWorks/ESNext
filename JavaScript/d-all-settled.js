@@ -3,7 +3,7 @@
 {
   const p1 = Promise.resolve('p1');
 
-  const p2 = new Promise(resolve => {
+  const p2 = new Promise((resolve) => {
     setTimeout(resolve, 1000, 'p2');
   });
 
@@ -11,7 +11,7 @@
     setTimeout(reject, 100, 'p3');
   });
 
-  Promise.all([p1, p2, p3]).then(values => {
+  Promise.all([p1, p2, p3]).then((values) => {
     console.log(values);
   });
 }
@@ -28,7 +28,7 @@
 {
   const p1 = Promise.resolve('p1');
 
-  const p2 = new Promise(resolve => {
+  const p2 = new Promise((resolve) => {
     setTimeout(resolve, 1000, 'p2');
   });
 
@@ -36,7 +36,7 @@
     setTimeout(reject, 100, 'p3');
   });
 
-  Promise.allSettled([p1, p2, p3]).then(values => {
+  Promise.allSettled([p1, p2, p3]).then((values) => {
     console.log(values);
   });
 }

@@ -19,7 +19,7 @@
 // Array.prototype.flatMap(callback[, thisArg])
 {
   const array = [1, [2, [3], 4], 5];
-  const array1 = array.flatMap(item => {
+  const array1 = array.flatMap((item) => {
     console.dir({ item });
     return item;
   });
